@@ -1,0 +1,6 @@
+Name: Tax Fraud Empire
+Task:Make Fake tax thingys
+Objective:ENDLESS
+POV:3rd person
+
+
