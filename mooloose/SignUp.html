@@ -1,39 +1,48 @@
 <head>
+<title>Sign Up!</title>
+<style>.top-right {
+  position: absolute;
+  top: 500px;
+  right: 1100px;</style>
 
+</head>
+\ <a href="index.html">Go Back</a> <a href="Animatronics.html">Peakz</a> <a href="Kredit.html">Credits</a>
+<hr>
 
-</head>\ <a href="index.html">Go Back</a> <a href="Animatronics.html">Peakz</a> <a href="Kredit.html">Credits</a>
-<hr><body>
-  <div style="font-family: Roboto; border-radius: 5px; padding: 1px 30px; width: 75%;">
-    <h2 style="font-size:30px">Sign up</h2>
-    <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
-       <div>
-          <label>Full Name</label>
-          <div>
-             <input style="margin-top: 5px; background-color: #fff; height:35px; width:235px;" type="text" name="first_name" placeholder="Enter your name and surname" required="required">
-          </div>
-       </div>
-       <br>
-       <div>
-          <label>Email address</label>
-          <div>
-             <input style="margin-top: 5px;background-color: #fff; height:35px; width:235px;" type="email" name="email" placeholder="Enter your email address" required="required">
-          </div>
-       </div>
-       <br>
-       <div>
-          <label>Your Message</label>
-          <div>
-             <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
-          </div>
-       </div>
-       <div>
-          <label>Upload document:</label>
-          <input type="file" name="file" required="required">
-       </div>
-       <br>
-       <input type="hidden" name="utf8" value="✓">
-       <button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
+<body>
+     <img src="MrContract.png"height="1143" width="1507" alt="Chillestguy-OnEarth">
+  <div class="top-right" style="background-image: MrContract.png;">
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+      <div class="container">
+       
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+    
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+   
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+      
     </form>
- </div>
+  
+  </div>
 
+ </form>
 </body>
