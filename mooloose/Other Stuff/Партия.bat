@@ -1,6 +1,6 @@
 (This is fake it will not hack your personal system)
 @echo off
-color 02
+color 03
 :start
-echo %random%  %random%  SECRETPAGE.HTML %random% %random% 
+echo %random%  %random%  hml.HTML %random% %random% 
 goto start
