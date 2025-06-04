@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote of the Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20%;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    #quote {
+      font-size: 1.5em;
+      margin: 20px;
+    }
+    #author {
+      font-size: 1.2em;
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+    Funny Garbage Quotes of The Century
+  <div id="quote-container">
+    <div id="quote">"Loading Our Funny Garbage Quotes..."</div>
+    <div id="author"></div>
+  </div>
+
+  <script>
+    const quotes = [
+      { text: "This isn't The Greatest website in the world.This is just a TRIBUTE", author: "Tenacious D" },
+      { text: "I love Vines.", author: "Grandpa" },
+      { text: "Flying Cow's (Built To Last).", author: "My Neighbors Pet Rat" },
+      { text: "Chicken x6 MOO!.", author: "Moo-Loose" },
+      { text: "We Dressed up as Technoblade We saw you did you see us???.", author: "Me And Isaiah" }
+    ];
+
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('quote').textContent = `"${randomQuote.text}"`;
+    document.getElementById('author').textContent = `- ${randomQuote.author}`;
+  </script>
+</body>
+</html>
