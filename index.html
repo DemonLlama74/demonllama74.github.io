@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <script>
+function clickCounter() {
+  const x = document.getElementById("result");
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    x.innerHTML = "We have gotten " + sessionStorage.clickcount + " Click visits from YOU!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+}
+</script>
     <title>Moo-Loose</title>
     <audio autoplay loop>
       <source src="Moosic/MOrtgage-1.mp3" type="audio/mp3">
@@ -19,7 +35,7 @@ body {
     </style>
    <!--<The Music doesnt work on the first try!>-->
    <p style="color: black">
-    <a href="outbrk.html">HAPPY NEW YEARS 2026</a>
+    <a href="outbrk.html">Secret</a>
    </p>
    <p style="color: yellow;">
    <marquee> <font size="100">MOO LOOSE</font>
@@ -35,6 +51,10 @@ body {
 
     <br>
     <hr>
+    <a href="SignUp.html">Create an Account!</a>
+    <br><button onclick="clickCounter()" type="button">add a personal visit</button>
+<p id="result"></p>
+
     <center>
 
     <br>  <img src="MoogerBanner4.png" alt="BannerMOO" width="1350" height="376">
@@ -45,11 +65,6 @@ body {
               alt="Button Image" style="width: 180px; height: 100px;">
       </a>
       </button>
-      <a href="SignUp.html"
-      <div class="container">  
-        <img src="SignUP2.gif"
-              alt="Button Image" style="width: 180px; height: 100px;">
-      </a>
     </a>
   </button>
   <a href="Kredit.html"
