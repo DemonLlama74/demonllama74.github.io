@@ -2,21 +2,6 @@
 <html>
   <head>
     
-    <script>
-function clickCounter() {
-  const x = document.getElementById("result");
-  if (typeof(Storage) !== "undefined") {
-    if (sessionStorage.clickcount) {
-      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-    } else {
-      sessionStorage.clickcount = 1;
-    }
-    x.innerHTML = "We have gotten " + sessionStorage.clickcount + " Click visits from YOU!";
-  } else {
-    x.innerHTML = "Sorry, no Web storage support!";
-  }
-}
-</script>
     <title>Moo-Loose</title>
     <audio autoplay loop>
       <source src="Moosic/MOrtgage-1.mp3" type="audio/mp3">
@@ -110,9 +95,13 @@ body {
 <td colspan="1" rowspan="2" align="right" valign="middle">
 <a href="Videos.html"><img src="Particular pictures/MOOTUBE_icon.png" height="90" width="150" alt="MOOTUBE" border="0"></a>
 </td>
+<td colspan="3" rowspan="2" align="center" valign="middle">
+<a href="Other Pages/SUPPORT.html"><img src="Particular pictures/supportbutton.gif" alt="Support" border="0"></a>
+</td>
 <td colspan="6" rowspan="2" align="right" valign="middle">
 <a href="Article.html"><img src="Articles_icon.png" height="90" width="150" alt="Articles" border="0"></a>
 </td>
+
 </tbody></table>
       </center>
       <br>
